@@ -24,11 +24,15 @@ class Set {
   }
 
   delete(val) {
-
+    this.arr = this.arr.filter(x => x !== val)
   }
 
   has(val) {
     return this.arr.includes(val)
+  }
+  
+  getSize() {
+    return this.arr.length
   }
   
 }
